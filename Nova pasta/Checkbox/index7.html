@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+
+            color: black;
+
+            height: 100%;
+            /* Certifica-se de que o HTML e o body ocupem toda a altura da página */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            /* Centraliza horizontalmente */
+            align-items: center;
+            /* Centraliza verticalmente */
+        }
+
+        .alerta {
+            width: 540px;
+            height: 360px;
+            background-color: #FFF;
+
+            display: flex;
+            justify-content: center;
+            /* Centraliza horizontalmente o conteúdo da div */
+            align-items: center;
+            /* Centraliza verticalmente o conteúdo da div */
+            height: 100%;
+            /* Certifica-se de que a div ocupe toda a altura disponível */
+            text-align: center;
+            /* Centraliza o texto horizontalmente */
+        }
+
+        .titulo {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .conteudo {
+            margin: 40px;
+
+            max-width: 600px;
+            /* Define uma largura máxima para o texto */
+            padding: 20px;\ .
+        }
+
+        /*Flexbox*/
+        .carta {
+            display: flex;
+            justify-content: center;
+            /* Centraliza horizontalmente */
+            align-items: center;
+            /* Centraliza verticalmente */
+            height: 100vh;
+            /* 100% da altura da janela de visualização */
+        }
+
+        /*Grid layout*/
+        .carta {
+            display: grid;
+            place-items: center;
+            /* Centraliza horizontal e verticalmente */
+            height: 100vh;
+            /* 100% da altura da janela de visualização */
+        }
+
+        /*position e transform*/
+        .carta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: auto;
+            /* Certifique-se de que a altura seja auto ou ajustável */
+        }
+
+        /*line-height*/
+        .carta {
+            height: 200px;
+            line-height: 200px;
+            /* Mesma altura do elemento */
+            text-align: center;
+            /* Centraliza o texto horizontalmente */
+        }
+
+        p {}
+    </style>
+</head>
+
+<body>
+    <div class="alerta">
+        <div class="conteudo">
+            <h1 class="titulo">Atenção!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

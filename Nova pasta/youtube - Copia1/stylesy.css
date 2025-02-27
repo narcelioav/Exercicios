@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 85%;
+    margin-left: 15%;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    width: 15%;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.menu-lateral ul li {
+    margin-bottom: 20px;
+}
+
+.menu-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-lateral ul li a:hover {
+    color: #ccc;
+}
+
+.menu-img {
+    width: 30px;
+    height: auto;
+}
+
+/* Menu Topo */
+.menu-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.menu-topo .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-topo .busca input {
+    padding: 10px;
+    width: 300px;
+}
+
+.menu-topo .login a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Conteúdo de Vídeos */
+.conteudo {
+    margin-top: 20px;
+}
+
+.linha-videos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.videos-recomendados {
+    width: 23%;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.videos-recomendados img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.principal {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.secundario {
+    font-size: 14px;
+    color: #666;
+}

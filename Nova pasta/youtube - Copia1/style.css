@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.h1 {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.h4 {
+    color: red;
+}
+
+.p {
+    font-size: 20px;
+    color: black;
+}
+
+.principal {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.secundario {
+    font-size: 10px;
+    font-weight: bold;
+    color: grey;
+}
+
+.a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.recomendados {
+    /*Margin é o rspaço externo da div
+        Pedding é o espaço interno*/
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.conteudo {
+    background-color: chocolate;
+    display: flex;
+    /*Apresentar as div's em linha*/
+    flex-wrap: wrap;
+    /*Limitar as div's dentro da div conteudo, quebra a linha da div*/
+}
+
+.videos-recomendados {
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menu lateral esquerdo */
+.menu-lateral {
+    width: 100px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #555;
+}
+
+/* Menu de topo direito */
+.menu-topo {
+    width: 85%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu-topo .logo {
+    margin-right: auto;
+}
+
+.menu-topo .busca input {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.menu-topo .login a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Conteúdo central de vídeos */
+.conteudo-videos {
+    width: 100%;
+    padding: 20px;
+}
+
+.linha-videos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.video {
+    background-color: #ddd;
+    width: 23%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}

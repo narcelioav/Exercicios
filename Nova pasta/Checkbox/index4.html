@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+            display: flex;
+            width: 900px;
+        }
+
+        .gelo {
+            font-size: 50px;
+            background-color: lightskyblue;
+        }
+
+        .espaco {
+            width: 650px;
+            background-color: snow;
+            display: flex;
+        }
+
+        .espaco1 {
+            width: 650px;
+            background-color: snow;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .espaco2 {
+            width: 650px;
+            background-color: snow;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .espaco3 {
+            width: 650px;
+            background-color: snow;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .espaco4 {
+            width: 650px;
+            background-color: snow;
+            display: flex;
+            justify-content: center;
+        }
+
+        .espaco5 {
+            width: 650px;
+            background-color: snow;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .pinguim {
+            font-size: 40px;
+        }
+
+        h4 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4>Display flex sem justify-content</h4>
+        <div class="container">
+            <div class="gelo">❄️</div>
+            <div class="espaco">
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+            </div>
+            <div class="gelo">❄️</div>
+        </div>
+        <h4>Display flex justify-content: space-between</h4>
+        <div class="container">
+            <div class="gelo">❄️</div>
+            <div class="espaco1">
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+            </div>
+            <div class="gelo">❄️</div>
+        </div>
+        <h4>Display flex justify-content: space-around</h4>
+        <div class="container">
+            <div class="gelo">❄️</div>
+            <div class="espaco2">
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+            </div>
+            <div class="gelo">❄️</div>
+        </div>
+        <h4>Display flex justify-content: space-evenly</h4>
+        <div class="container">
+            <div class="gelo">❄️</div>
+            <div class="espaco3">
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+            </div>
+            <div class="gelo">❄️</div>
+        </div>
+        <h4>Display flex justify-content: center</h4>
+        <div class="container">
+            <div class="gelo">❄️</div>
+            <div class="espaco4">
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+            </div>
+            <div class="gelo">❄️</div>
+        </div>
+        <h4>Display flex justify-content: flex-end</h4>
+        <div class="container">
+            <div class="gelo">❄️</div>
+            <div class="espaco5">
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+                <div class="pinguim">🐧</div>
+            </div>
+            <div class="gelo">❄️</div>
+        </div>
+    </div>
+</body>
+
+</html>
