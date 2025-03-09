@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <ul></ul>
+
+    <script>
+
+        function adicionarTarefas() {
+            let tarefas = [];
+            let qntTarefas = parseInt(prompt("Quantas atividades fara hoje?"));
+
+            let contagem = 0;
+            while (contagem < qntTarefas) {
+                let tarefa = prompt(`Qual é a tarefa? ${contagem + 1}`);
+                tarefas.push(tarefa);
+                contagem++;
+            }
+
+            for (let contador = 0; contador < qntTarefas; contador++) {
+                let lista = document.querySelector("ul");
+                lista.innerHTML += `<li>${tarefas[contador]}</li>`;
+            }
+        }
+        adicionarTarefas();
+    </script>
+</body>
+
+</html>

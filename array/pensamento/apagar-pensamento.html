@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- favicon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Pensamento Doce - Remover itens</h1>
+        <p>Meu amigo Emanuel gosta muito de açúcar, desejando entender por que sua vida é tão doce, dedico este site a
+            ele, para anotar sempre que perceber a necessidade de consumir produtos cheios de açúcar, para tentar
+            perceber um padrão.</p>
+        <p>Às vezes Emanoel se arrepende de ter inserido um pensamento, quando percebe que foi na verdade por outro
+            motivo. Por isso, gostaria de poder apagar alguns pensamentos da lista.</p>
+    </header>
+
+    <!-- corpo -->
+
+    <button class="doce" onclick="adicionarPensamento()">
+        Adicionar pensamento
+    </button>
+
+    <ul class="pensamentos">
+        <li onclick="apagarItem()">Tourtuguita, é isso aí</li>
+        <li onclick="apagarItem()">
+            Barraca do Responde Aí tá dando chocolate de graça...
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="pirulito"></div>
+        <div class="cereal-container">
+            <div class="cereal-laranja"></div>
+            <div class="cereal-branco"></div>
+        </div>
+        <div class="twizzler"></div>
+    </div>
+
+
+    <!-- footer -->
+
+
+
+    <!-- icones -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- javascript -->
+    <script>
+        function adicionarPensamento() {
+            var pensamento = prompt("Qual o seu pensamento de açucar? ");
+
+            var lista = document.querySelector(".pensamentos");
+
+            lista.innerHTML += `
+        <li onclick="apagarItem(this)">${pensamento}</li>
+      `;
+        }
+
+        function apagarItem(elemento) {
+            // Apagar item
+            elemento.remove();
+            alert("Item apagado!");
+        }
+    </script>
+</body>
+
+</html>

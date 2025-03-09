@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- favicon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+
+    <!-- corpo -->
+    <ul class="tarefa"></ul>
+
+    <!-- footer -->
+
+
+
+    <!-- icones -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- javascript -->
+
+    <script>
+        // Lista de variaveis com array
+        //const tarefas = [tarefa1, tarefa2, tarefa3];
+
+        function adicionarTarefas() {
+            //console.log(tarefas);
+            // variaveis para salver as tarefas
+            const tarefas = [];
+            tarefas.push(prompt("Qual a primeira tarefa?"));
+            tarefas.push(prompt("Qual a segunda tarefa?"));
+            tarefas.push(prompt("Qual a terceira tarefa?"));
+
+
+            /*tarefas[0] = prompt("Qual a primeira tarefa?");
+            tarefas[1] = prompt("Qual a segunda tarefa?");
+            tarefas[2] = prompt("Qual a terceira tarefa?");*/
+
+            const elemento = document.querySelector("ul");
+            elemento.innerHTML = `
+        <li>${tarefas[0]}</li>
+        <li>${tarefas[1]}</li>
+        <li>${tarefas[2]}</li>`;
+
+            //elemento.innerHTML = elemento.innerHTML + `<li>${tarefa1}</li>`;
+            //elemento.innerHTML = elemento.innerHTML + `<li>${tarefa2}</li>`;
+            //elemento.innerHTML = elemento.innerHTML + `<li>${tarefa3}</li>`;
+
+        }
+        adicionarTarefas()
+
+    </script>
+
+    <script>
+        // Lista de variaveis
+        /* function adicionarTarefas() {
+             // variaveis para salver as tarefas
+             const tarefa1 = prompt("Qual a primeira tarefa?");
+             const tarefa2 = prompt("Qual a segunda tarefa?");
+             const tarefa3 = prompt("Qual a terceira tarefa?");
+ 
+             const elemento = document.querySelector("ul");
+             elemento.innerHTML = `
+             <li>${tarefa1}</li>
+             <li>${tarefa2}</li>
+             <li>${tarefa3}</li>`;
+ 
+             //elemento.innerHTML = elemento.innerHTML + `<li>${tarefa1}</li>`;
+             //elemento.innerHTML = elemento.innerHTML + `<li>${tarefa2}</li>`;
+             //elemento.innerHTML = elemento.innerHTML + `<li>${tarefa3}</li>`;
+             
+         }
+         adicionarTarefas()*/
+
+    </script>
+
+    <script>
+        /* Adicione seu código aqui, chamando a função
+        let pensamento = prompt("No que você esta pensando?");
+
+        while (pensamento !== "fim") {
+            adicionarPensamento(pensamento);
+            pensamento = prompt("No que você esta pensando?");
+        }
+        // adicionarPensamento pra cada resposta do usuário
+        function adicionarPensamento(pensamento) {
+            const elemento = document.querySelector("ul");
+            elemento.innerHTML = elemento.innerHTML + `<li>${pensamento}</li>`;
+
+        }*/
+
+
+    </script>
+</body>
+
+</html>
