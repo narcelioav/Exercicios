@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="aumentarLista()">Adicionar</button>
+    <div class="container"></div>
+
+    <script>
+        const lista = [1];
+
+        function colocarListaNaTela() {
+            const container = document.querySelector(".container");
+            container.innerHTML = lista;
+        }
+
+        function aumentarLista() {
+            // Seu código entra aqui: adicione um novo elemento
+            const index = lista.length;
+            // na lista que seja o último valor da array
+            lista[index] = lista[index - 1] * 2;
+            // multiplicado por dois.
+
+
+            colocarListaNaTela();
+        }
+
+        colocarListaNaTela();
+    </script>
+</body>
+
+</html>
