@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flip card</title>
 
     <!-- favicon -->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
@@ -24,7 +24,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header class="">
         <h1>PARROT CARD GAME</h1>
     </header>
 
@@ -41,9 +41,23 @@
             <li><img src="gifs/unicornparrot.gif" alt=""></li>
         </ul>
 
-        <div class="container escondido1">
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="card-image-front" src="gifs/front.png" alt="Parrot card front">
+                    </div>
+                    <div class="flip-card-back">
+                        <img class="card-image-back" src="gifs/bobrossparrot.gif" alt="Parrot card back">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1 escondido">
             <div class="card parrot-1">
                 <img class="front" src="gifs/front.png" alt="">
+                <img src="gifs/bobrossparrot.gif" alt="">
             </div>
             <div class="card parrot-2"><img class="front" src="gifs/front.png" alt=""></div>
             <div class="card parrot-3"><img class="front" src="gifs/front.png" alt=""></div>
@@ -62,7 +76,7 @@
 
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="escondido">
         <button onclick="revisarPedido()" disabled>Selecione os 3 itens
             para fechar o pedido</button>
     </footer>
