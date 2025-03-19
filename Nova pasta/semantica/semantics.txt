@@ -1,0 +1,15 @@
+<header> => Cabeçalho/topo de uma página ou seção
+<section> => Uma subdivisão da sua página, que geralmente tem um título associado
+<article> => Uma subdivisão da sua página, porém indicando também que aquele conteúdo pode ser visto independente do resto (ex: um post de blog)
+<nav> => Menu de navegação principal da página
+<aside> => Conteúdo secundário à página atual, geralmente traz conteúdos relacionados / leia mais
+<main> => Contém o principal conteúdo da página, o que torna aquela página única (ou seja, sem navegação, topo e elementos que se repitam em outras páginas)
+<figure> => Envolve uma imagem que seja um conteúdo por si só, geralmente acompanhada de legenda usando a tag <figcation>
+<footer> => Rodapé de uma página ou seção, geralmente traz meta-informações sobre a página, autores, etc
+<em> => Dá ênfase em um conteúdo para facilitar a compreensão (ex: mudança de entonação na leitura ou marcar termo em outro idioma)
+<strong> => Dà ênfase em um conteúdo, no sentido de destacar como um trecho muito importante
+<q> => Frase que seja citação de um autor externo
+<blockquote> => Mesmo que acima, porém aceita qualquer HTML que seja de um autor externo, não só texto
+<cite> => Envolve a fonte de onde a citação/conteúdo foi tirada
+<time> => Data e hora
+<address> => Endereço
