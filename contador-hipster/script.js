@@ -12,4 +12,5 @@ function decrementaContador() {
         clearInterval(idInterval);
         alert("Hora da janta!");
     }
+
 }

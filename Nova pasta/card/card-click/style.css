@@ -2,6 +2,7 @@
     width: 200px;
     height: 250px;
     position: relative;
+    cursor: pointer;
 }
 
 .face {
@@ -29,10 +30,16 @@
     transform: rotateY(180deg);
 }
 
-.card:hover .back-face {
+/* Aplica a rotação ao clicar 
+.card.virada {
+    transform: rotateY(180deg);
+}*/
+
+/* Rotaciona as faces corretamente */
+.card.virada .back-face {
     transform: rotateY(0deg);
 }
 
-.card:hover .front-face {
+.card.virada .front-face {
     transform: rotateY(-180deg);
 }
