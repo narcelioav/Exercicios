@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    color: #75B79E;
+    color: var(--cor-titulo);
     font-size: 28px;
     padding: 20px;
     font-weight: bold;
@@ -76,7 +76,7 @@ ul {
 .face {
     width: 100%;
     height: 100%;
-    background-color: #A7E9AF;
+    background-color: var(--cor-carta);
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
     border: 1px solid var(--cor-carta-borda);
@@ -89,6 +89,12 @@ ul {
     backface-visibility: hidden;
     transition: all .5s;
     transform-style: preserve-3d;
+}
+
+.finalizada {
+    border: 3px solid #28a745;
+    /* Verde para indicar acerto */
+    box-shadow: 0 0 10px rgba(235, 155, 89, 0.8);
 }
 
 .back-face {
@@ -120,6 +126,12 @@ ul {
 
 .escondido {
     display: none;
+}
+
+.tempo {
+    position: fixed;
+    top: 5px;
+    left: 5px;
 }
 
 /** midia-query */

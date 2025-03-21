@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguencia de Fibonacci</title>
+</head>
+
+<body>
+
+    <div class="container"></div>
+
+    <script>
+
+        function SeguenciaFibonacci(quantidade) {
+            let termo1 = 0;
+            let termo2 = 1;
+            let proximo = "";
+
+            document.write("<h1>Sequência de Fibonacci:</h1>");
+            document.write("<h4>Usando variaveis - Exibido com Document Write, dentro (for) da função</h4>");
+
+            for (let i = 0; i <= quantidade; i++) {
+                document.write(termo1 + ", ");// Exibe o número atual
+
+                proximo = termo1 + termo2;// Calcula o próximo número
+                termo1 = termo2; // Atualiza o primeiro termo
+                termo2 = proximo; // Atualiza o segundo termo
+            }
+        }
+
+        SeguenciaFibonacci(10);// Chamada da função para exibir 10 números
+
+        // Sequencia de Fibanacci com array
+
+        function fibonacci(n) {
+            let sequencia = [0, 1]; // Começamos com os dois primeiros números
+
+            for (let i = 2; i < n; i++) {
+                let proximo = sequencia[i - 1] + sequencia[i - 2];// Soma os dois anteriores
+                sequencia.push(proximo);
+            }
+
+            return sequencia;
+        }
+
+        //fibonacci(10);
+
+        // Testando a função
+        console.log(fibonacci(10)); // Retorna os primeiros 10 números da sequência
+
+        document.write("<br><br><h1>Seguencia de Fibonacci</h1><h4>Usando Array - Exibido com Document Write, fora da função</h4>" + fibonacci(10));// Exibe o número atual
+
+        const mostrar = fibonacci(10);
+        const exibir = document.querySelector(".container");
+        exibir.innerHTML = `
+        <h1>Seguencia de Fibonacci</h1>
+        <h4>Usando Array - Exibido com innerHTML, fora da função</h4>
+        ${mostrar}`;
+
+
+    </script>
+</body>
+
+</html>
