@@ -45,12 +45,21 @@ function adicionarReceita() {
 
   if(titulo && ingredientes && preparo) {
     const novaReceita = { titulo: titulo, ingredientes: ingredientes, preparo: preparo };
+
+    const promise = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v2/tastecamp/receitas", novaReceita);
+    //console.log(promise);
+    promise.then(promessaReceitaNovaCumprida);
+
     receitas.push(novaReceita);
     renderizarReceitasMenu();
   } else {
     alert("Precisa preencher tudo bonitinho!"); 
   }
 
+}
+
+function promessaReceitaNovaCumprida(resposta){
+  console.log(resposta);
 }
 
 function adicionarReceitaPagina() {
