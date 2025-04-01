@@ -27,7 +27,7 @@ function renderizarReceitasMenu() {
   }
 }
 
-function renderizarDetalhesReceita(indice) {  
+function renderizarDetalhesReceita(indice) {
   mostrarReceitaPagina();
   const tituloHTML = document.querySelector('.receita .titulo');
   const ingredientesHTML = document.querySelector('.receita .ingredientes .destaque');
@@ -43,22 +43,28 @@ function adicionarReceita() {
   const ingredientes = document.querySelector(".ingredientes-receita").value;
   const preparo = document.querySelector(".modo-preparo-receita").value;
 
-  if(titulo && ingredientes && preparo) {
+  if (titulo && ingredientes && preparo) {
     const novaReceita = { titulo: titulo, ingredientes: ingredientes, preparo: preparo };
 
     const promise = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v2/tastecamp/receitas", novaReceita);
     //console.log(promise);
-    promise.then(promessaReceitaNovaCumprida);
+    promise.then(promessaReceitaNovaCumprida); // Falhou
+    promise.catch(promessaReceitaNovaFalhou); // Tudo certo
 
     receitas.push(novaReceita);
     renderizarReceitasMenu();
   } else {
-    alert("Precisa preencher tudo bonitinho!"); 
+    alert("Precisa preencher tudo bonitinho!");
   }
 
 }
 
-function promessaReceitaNovaCumprida(resposta){
+function promessaReceitaNovaFalhou(erro) {
+  alert("Falhou, Tente novamente!");
+  console.log(erro.response);
+}
+
+function promessaReceitaNovaCumprida(resposta) {
   console.log(resposta);
 }
 
