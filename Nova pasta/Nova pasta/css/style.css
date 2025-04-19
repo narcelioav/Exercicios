@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.barra-filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #dbdbdb;
+}
+
+.barra-filtro label,
+input,
+button {
+  margin: 2px 10px;
+}
+
+.barra-filtro button {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.barra-filtro ion-icon {
+  margin-right: 5px;
+}
+
+main {
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+main li {
+  margin: 10px 20px;
+  list-style-type: disc;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+b {
+  font-weight: bold;
+}

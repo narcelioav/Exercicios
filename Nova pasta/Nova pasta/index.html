@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>T5 - Hands ON: HOFs</title>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="barra-filtro">
+      <label for="usuario">Nome do usuário: </label>
+      <input name="usuario" type="text" placeholder="usuário" />
+      <button onclick="filtrarMensagens()">
+        <ion-icon name="filter-outline"></ion-icon>Filtrar
+      </button>
+      <button onclick="salvarMensagens()">
+        <ion-icon name="save-outline"></ion-icon> Salvar
+      </button>
+    </header>
+    <main>
+      <h1>Mensagens</h1>
+      <ul>
+        <!-- carregar dinamicamente -->
+      </ul>
+    </main>
+    <!-- scripts -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
